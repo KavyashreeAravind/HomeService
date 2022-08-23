@@ -10,10 +10,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
-COPY ["HomeService/HomeService.csproj", "HomeService/"]
-RUN dotnet restore "HomeService/HomeService.csproj"
+COPY ["HomeService.csproj", "."]
+RUN dotnet restore "./HomeService.csproj"
 COPY . .
-WORKDIR "/src/HomeService"
+WORKDIR "/src/."
 RUN dotnet build "HomeService.csproj" -c Release -o /app/build
 
 FROM build AS publish
