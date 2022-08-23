@@ -6,14 +6,13 @@
 FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80
-EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
-COPY ["HomeService/HomeService.csproj", "HomeService/"]
-RUN dotnet restore "HomeService/HomeService.csproj"
+COPY ["HomeService/HomeService.csproj", "."]
+RUN dotnet restore "./HomeService/HomeService.csproj"
 COPY . .
-WORKDIR "/src/HomeService"
+WORKDIR "/src/."
 RUN dotnet build "HomeService.csproj" -c Release -o /app/build
 
 FROM build AS publish
