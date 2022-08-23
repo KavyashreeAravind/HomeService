@@ -13,8 +13,8 @@ spec:
         app: HomeService
     spec:
       containers:
-      - name:  homeservicecr
-        image: checklistservicecr.azurecr.io/homeserviceserviceimage:latest
+      - name:  homeserviceamscr
+        image: homeserviceamscr.azurecr.io/homeserviceimage:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
