@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zMv1ulf94xhXztc8SZVHULGH1QlWktGvFMOkV9ExSFmMZnDPwEUDlNMZKwei/XDb29jH2bGYfQfXz83HJVz9GQ==",
+  "dgSpecHash": "uMZpZt/guJuo78vBgMCW2a4dWbUxXM0C9R6P2yQ5Qe3AkLelP1DPvO1L7PAe/RMT2rv+lOjfuAtv1Fgb5CdE4Q==",
   "success": true,
-  "projectFilePath": "C:\\AuditManagementSystem\\Audit-Management-System_backend\\Audit-Management-system-master\\HomeService\\HomeService.csproj",
+  "projectFilePath": "C:\\AMS\\AuditManagementSystem\\Audit-Management-System\\Audit-Management-System_backend\\Audit-Management-system-master\\HomeService\\HomeService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\916009\\.nuget\\packages\\log4net\\2.0.12\\log4net.2.0.12.nupkg.sha512",
     "C:\\Users\\916009\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.28\\microsoft.aspnetcore.authentication.jwtbearer.3.1.28.nupkg.sha512",
